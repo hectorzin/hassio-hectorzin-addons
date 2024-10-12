@@ -3,7 +3,6 @@
   "version": "1.0",
   "slug": "botaffiumeiro",
   "description": "Modify Telegram links for affiliate links",
-  "icon": "botaffiumeiro.png"
   "arch": ["armv7", "aarch64", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
