@@ -1,0 +1,14 @@
+{
+  "name": "Botaffiumeiro Add-ons",
+  "url": "https://github.com/hectorzin/home-assistant-botaffiumeiro-addon",
+  "maintainer": "HectorziN
+  "addons": [
+    {
+      "name": "Botaffiumeiro",
+      "slug": "botaffiumeiro",
+      "description": "BHome Assistant component to run botaffiumeiro in the background to allow changing links to affiliate links in Telegram groups",
+      "repository": "https://github.com/hectorzin/home-assistant-botaffiumeiro-addon",
+      "version": "1.0"
+    }
+  ]
+}
