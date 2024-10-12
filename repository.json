@@ -1,7 +1,7 @@
 {
   "name": "Botaffiumeiro Add-ons",
   "url": "https://github.com/hectorzin/hassio-botaffiumeiro-addon",
-  "maintainer": "HectorziN
+  "maintainer": "HectorziN"
   "addons": [
     {
       "name": "Botaffiumeiro Home Assistant Addon",
