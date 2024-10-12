@@ -9,5 +9,6 @@
   "boot": "auto",
   "host_network": true,
   "options": {},
-  "schema": {}
+  "schema": {},
+  "map": ["config:rw"],
 }
