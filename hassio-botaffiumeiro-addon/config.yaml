@@ -1,0 +1,16 @@
+name: "Botaffiumeiro"
+version: "1.0"
+slug: "botaffiumeiro"
+description: "Modify Telegram links for affiliate links"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - i386
+startup: "services"
+boot: "auto"
+host_network: true
+options:
+  token: ""
+schema:
+  token: "str?"
