@@ -23,3 +23,7 @@ options:
   aliexpress_app_secret: ""
   aliexpress_tracking_id: ""
   aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
+schema:
+  bot_token: "str?"
+  excluded_users: "str?"
+  
