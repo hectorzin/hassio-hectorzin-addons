@@ -1,0 +1,37 @@
+configuration:
+  bot_token:
+    name: Telegram Bot Token
+    description: Your Telegram bot token obtained from BotFather.
+  excluded_users:
+    name: "Excluded Users"
+    description: "Comma-separated list of users to be excluded from link modification."
+  log_level:
+    name: "Log Level"
+    description: "Set the logging level for the bot (DEBUG, INFO, WARN, ERROR, CRITICAL)."
+  amazon_affiliate_id:
+    name: "Amazon Affiliate ID"
+    description: "Your Amazon Affiliate ID used to modify Amazon links."
+  awin_publisher_id:
+    name: "Awin Publisher ID"
+    description: "Your Awin Publisher ID for managing affiliate links of Awin stores."
+  awin_advertisers:
+    name: "Awin Advertisers"
+    description: "Comma-separated list of Awin advertisers and their IDs (format: domain:id)."
+  admitad_publisher_id:
+    name: "Admitad Publisher ID"
+    description: "Your Admitad Publisher ID for managing affiliate links of Admitad stores."
+  admitad_advertisers:
+    name: "Admitad Advertisers"
+    description: "Comma-separated list of Admitad advertisers and their campaign IDs (format: domain:campaign_id)."
+  aliexpress_app_key:
+    name: "AliExpress App Key"
+    description: "Your AliExpress App Key used for API requests."
+  aliexpress_app_secret:
+    name: "AliExpress App Secret"
+    description: "Your AliExpress App Secret used to sign API requests."
+  aliexpress_tracking_id:
+    name: "AliExpress Tracking ID"
+    description: "Your AliExpress Tracking ID for affiliate tracking."
+  aliexpress_discount_codes:
+    name: "AliExpress Discount Codes"
+    description: "Discount codes for AliExpress purchases. Use \\n for new lines."
