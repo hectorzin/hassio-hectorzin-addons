@@ -1,0 +1,46 @@
+configuration:
+  bot_token:
+    name: "Token del Bot de Telegram"
+    description: "Tu token del bot de Telegram obtenido de BotFather."
+  excluded_users:
+    name: "Usuarios Excluidos"
+    description: "Lista de usuarios separados por comas que serán excluidos de la modificación de enlaces."
+  log_level:
+    name: "Nivel de Registro"
+    description: "Configura el nivel de registro del bot (DEBUG, INFO, WARN, ERROR, CRITICAL)."
+  amazon_affiliate_id:
+    name: "ID de Afiliado de Amazon"
+    description: "Tu ID de Afiliado de Amazon para modificar enlaces de Amazon."
+  awin_publisher_id:
+    name: "ID de Publisher de Awin"
+    description: "Tu ID de Publisher de Awin para gestionar los enlaces de afiliado de tiendas Awin."
+  awin_advertisers:
+    name: "Anunciantes de Awin"
+    description: "Lista separada por comas de anunciantes de Awin y sus IDs (formato: dominio:id)."
+  admitad_publisher_id:
+    name: "ID de Publisher de Admitad"
+    description: "Tu ID de Publisher de Admitad para gestionar los enlaces de afiliado de tiendas Admitad."
+  admitad_advertisers:
+    name: "Anunciantes de Admitad"
+    description: "Lista separada por comas de anunciantes de Admitad y sus IDs de campaña (formato: dominio:id_campaña)."
+  aliexpress_app_key:
+    name: "Clave de la App de AliExpress"
+    description: "Tu clave de la app de AliExpress utilizada para las solicitudes a la API."
+  aliexpress_app_secret:
+    name: "Secreto de la App de AliExpress"
+    description: "El secreto de la app de AliExpress utilizado para firmar las solicitudes a la API."
+  aliexpress_tracking_id:
+    name: "ID de Seguimiento de AliExpress"
+    description: "Tu ID de seguimiento de AliExpress para enlaces de afiliado."
+  aliexpress_discount_codes:
+    name: "Códigos de Descuento de AliExpress"
+    description: "Códigos de descuento para compras en AliExpress. Usa \\n para saltos de línea."
+  msg_affiliate_link_modified:
+    name: "Mensaje de Enlace de Afiliado Modificado"
+    description: "Mensaje que el bot enviará cuando modifique un enlace de afiliado."
+  msg_reply_provided_by_user:
+    name: "Mensaje de Respuesta Proporcionada por el Usuario"
+    description: "Mensaje que el bot enviará indicando que la respuesta ha sido proporcionada por el usuario."
+  msg_aliexpress_discount:
+    name: "Mensaje de Códigos de Descuento de AliExpress"
+    description: "Mensaje que el bot enviará junto con los códigos de descuento de AliExpress."
