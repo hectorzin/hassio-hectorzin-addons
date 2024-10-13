@@ -11,25 +11,25 @@ startup: "services"
 boot: "auto"
 host_network: true
 options:
-  general:
-    - bot_token: ""
-      excluded_users: ""
-      log_level: "INFO"
-  amazon:
-    - amazon_affiliate_id: ""
-  aliexpress:
-    - aliexpress_app_key: ""
-      aliexpress_app_secret: ""
-      aliexpress_tracking_id: ""
-      aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
-  awin:
-    - awin_publisher_id: ""
-      awin_advertisers: ""
-  admitad:
-    - admitad_publisher_id: ""
-      admitad_advertisers: ""
+    bot_token: ""
+    msg_affiliate_link_modified: "Here is the modified link with our affiliate program:"
+    msg_reply_provided_by_user: "Reply provided by"
+    excluded_users: "HectorziN,danimart1991"
+    log_level: "INFO"
+    amazon_affiliate_id: "botaffiumeiro_cofee-21"
+    aliexpress_app_key: ""
+    aliexpress_app_secret: ""
+    aliexpress_tracking_id: ""
+    msg_aliexpress_discount: "💥 AliExpress discount codes:\n\n"
+    aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
+    awin_publisher_id: "1639881"
+    awin_advertisers: "pccomponentes.com:20982,leroymerlin.es:20598,aliexpress.com:11640"
+    admitad_publisher_id: "2306205"
+    admitad_advertisers: "giftmio.com:93fd4vbk6c873a1e3014d68450d763"
 schema:
   bot_token: "str"
+  msg_affiliate_link_modified: "str"
+  msg_reply_provided_by_user: "str"
   excluded_users: "str?"
   log_level: "str?"
   amazon_affiliate_id: "str?"
@@ -40,4 +40,5 @@ schema:
   aliexpress_app_key: "str?"
   aliexpress_app_secret: "str?"
   aliexpress_tracking_id: "str?"
+  msg_aliexpress_discount: "str?"
   aliexpress_discount_codes: "str?"
