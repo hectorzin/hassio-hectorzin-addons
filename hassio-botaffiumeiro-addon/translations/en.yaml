@@ -35,3 +35,12 @@ configuration:
   aliexpress_discount_codes:
     name: "AliExpress Discount Codes"
     description: "Discount codes for AliExpress purchases. Use \\n for new lines."
+  msg_affiliate_link_modified:
+    name: "Affiliate Link Modified Message"
+    description: "Message to display when an affiliate link has been modified."
+  msg_reply_provided_by_user:
+    name: "Reply Provided by User Message"
+    description: "Message to indicate who provided the reply with the affiliate link."
+  msg_aliexpress_discount:
+    name: "AliExpress Discount Message"
+    description: "Message to display when AliExpress discount codes are included."
