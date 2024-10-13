@@ -24,18 +24,41 @@ options:
   aliexpress_tracking_id: ""
   aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
 schema:
-  bot_token: str
-  excluded_users: str
-  log_level:
+  bot_token:
     type: string
     required: true
+  excluded_users:
+    type: string
+    required: false
+  log_level:
+    type: string
+    required: false
     default: "INFO"
-  amazon_affiliate_id: str
-  awin_publisher_id: str
-  awin_advertisers: str
-  admitad_publisher_id: str
-  admitad_advertisers: str
-  aliexpress_app_key: str
-  aliexpress_app_secret: str
-  aliexpress_tracking_id: str
-  aliexpress_discount_codes: str
+  amazon_affiliate_id:
+    type: string
+    required: false
+  awin_publisher_id:
+    type: string
+    required: false
+  awin_advertisers:
+    type: string
+    required: false
+  admitad_publisher_id:
+    type: string
+    required: false
+  admitad_advertisers:
+    type: string
+    required: false
+  aliexpress_app_key:
+    type: string
+    required: false
+  aliexpress_app_secret:
+    type: string
+    required: false
+  aliexpress_tracking_id:
+    type: string
+    required: false
+  aliexpress_discount_codes:
+    type: string
+    required: false
+    default: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
