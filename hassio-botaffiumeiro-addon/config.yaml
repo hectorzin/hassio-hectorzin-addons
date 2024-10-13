@@ -19,21 +19,23 @@ options:
   awin_advertisers: ""
   admitad_publisher_id: ""
   admitad_advertisers: ""
-  aliexpress_discount_codes: ""
+  aliexpress_app_key: ""
+  aliexpress_app_secret: ""
+  aliexpress_tracking_id: ""
+  aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
 schema:
-  bot_token: "str"
-  excluded_users: "str"
+  bot_token: str
+  excluded_users: str
   log_level:
-    type: "select"
-    options:
-      - "DEBUG"
-      - "INFO"
-      - "WARN"
-      - "ERROR"
-      - "CRITICAL"
-  amazon_affiliate_id: "str"
-  awin_publisher_id: "str"
-  awin_advertisers: "str"
-  admitad_publisher_id: "str"
-  admitad_advertisers: "str"
-  aliexpress_discount_codes: "str"
+    type: string
+    required: true
+    default: "INFO"
+  amazon_affiliate_id: str
+  awin_publisher_id: str
+  awin_advertisers: str
+  admitad_publisher_id: str
+  admitad_advertisers: str
+  aliexpress_app_key: str
+  aliexpress_app_secret: str
+  aliexpress_tracking_id: str
+  aliexpress_discount_codes: str
