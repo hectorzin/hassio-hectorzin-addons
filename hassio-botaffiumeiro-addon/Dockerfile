@@ -1,14 +1,21 @@
 FROM python:3.9-slim
 
-# Instalar las dependencias necesarias
+# Install necessary dependencies
 RUN apt-get update && apt-get install -y git
 
-# Clonar el repositorio de Botaffiumeiro
+# Clone the Botaffiumeiro repository
 RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
 
-# Instalar las dependencias del proyecto
+# Install project dependencies
 WORKDIR /botaffiumeiro
 RUN pip install -r requirements.txt
 
-# Ejecutar la aplicación
-CMD ["python", "botaffiumeiro.py"]
+# Ensure /data directory is created (for persistent data)
+RUN mkdir -p /data
+
+# Copy the run.sh script
+COPY run.sh /botaffiumeiro/run.sh
+RUN chmod +x /botaffiumeiro/run.sh
+
+# Run the application
+CMD ["/botaffiumeiro/run.sh"]
