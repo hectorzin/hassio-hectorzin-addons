@@ -1,15 +1,13 @@
-name: "Botaffiumeiro"
+name: Bot Affiumeiro
 version: "1.0"
-slug: "botaffiumeiro"
-description: "Modify Telegram links for affiliate links"
+slug: botaffiumeiro
+description: "Complemento de Home Assistant para el bot Affiumeiro"
 arch:
   - amd64
-  - aarch64
   - armv7
-  - i386
-startup: "services"
-boot: "auto"
-host_network: true
+  - aarch64
+startup: services
+boot: auto
 options:
   path_to_host_data: "/data"
   bot_token: ""
@@ -29,18 +27,18 @@ options:
   admitad_advertisers: "giftmio.com:93fd4vbk6c873a1e3014d68450d763"
 schema:
   path_to_host_data: str
-  bot_token: "str"
-  msg_affiliate_link_modified: "str"
-  msg_reply_provided_by_user: "str"
-  excluded_users: "str?"
-  log_level: "str?"
-  amazon_affiliate_id: "str?"
-  awin_publisher_id: "str?"
-  awin_advertisers: "str?"
-  admitad_publisher_id: "str?"
-  admitad_advertisers: "str?"
-  aliexpress_app_key: "str?"
-  aliexpress_app_secret: "str?"
-  aliexpress_tracking_id: "str?"
-  msg_aliexpress_discount: "str?"
-  aliexpress_discount_codes: "str?"
+  bot_token: str
+  msg_affiliate_link_modified: str
+  msg_reply_provided_by_user: str
+  excluded_users: str?
+  log_level: str?
+  amazon_affiliate_id: str?
+  aliexpress_app_key: str?
+  aliexpress_app_secret: str?
+  aliexpress_tracking_id: str?
+  msg_aliexpress_discount: str?
+  aliexpress_discount_codes: str?
+  awin_publisher_id: str?
+  awin_advertisers: str?
+  admitad_publisher_id: str?
+  admitad_advertisers: str?
