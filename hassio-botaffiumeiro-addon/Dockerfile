@@ -1,9 +1,9 @@
-# Imagen base
+# Usar la imagen base de botaffiumeiro
 FROM ghcr.io/hectorzin/botaffiumeiro
 
-# Añadir archivos necesarios (por ejemplo, el script run.sh)
+# Copiar el script de ejecución al contenedor
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-# Comando de inicio del contenedor
+# Comando para ejecutar el script
 CMD ["/run.sh"]
