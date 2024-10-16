@@ -1,12 +1,21 @@
-# Usar la imagen base de botaffiumeiro
-ARG BUILD_FROM
-FROM ghcr.io/hectorzin/botaffiumeiro as botaffiumeiro
+FROM python:3.9-slim
 
-# Copiar el script de ejecución al contenedor
-COPY run.sh /run.sh
-COPY --from=botaffiumeiro /app/govee /app/
-COPY --from=botaffiumeiro /app/data /app/data
-RUN chmod +x /app/run.sh
+# Install necessary dependencies
+RUN apt-get update && apt-get install -y git
 
-# Comando para ejecutar el script
-CMD ["/run.sh"]
+# Clone the Botaffiumeiro repository
+RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
+
+# Install project dependencies
+WORKDIR /botaffiumeiro
+RUN pip install -r requirements.txt
+
+# Ensure /data directory is created (for persistent data)
+RUN mkdir -p /data
+
+# Copy the run.sh script
+COPY run.sh /botaffiumeiro/run.sh
+RUN chmod +x /botaffiumeiro/run.sh
+
+# Run the application
+CMD ["/botaffiumeiro/run.sh"]
