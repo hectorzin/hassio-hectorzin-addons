@@ -1,14 +1,21 @@
-# Use an official Python runtime as a parent image
-FROM python:3.12-alpine
+FROM python:3.9-slim
 
-# Set the working directory to /app
-WORKDIR /app
+# Install necessary dependencies
+RUN apt-get update && apt-get install -y git
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Clone the Botaffiumeiro repository
+RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r /app/requirements.txt
+# Install project dependencies
+WORKDIR /botaffiumeiro
+RUN pip install -r requirements.txt
 
-# Run app.py when the container launches
-CMD ["python", "botaffiumeiro.py"]
+# Ensure /data directory is created (for persistent data)
+RUN mkdir -p /data
+
+# Copy the run.sh script
+COPY run.sh /botaffiumeiro/run.sh
+RUN chmod +x /botaffiumeiro/run.sh
+
+# Run the application
+CMD ["/botaffiumeiro/run.sh"]
