@@ -1,10 +1,15 @@
-
 #!/bin/bash
 
-# Ruta del archivo YAML
-CONFIG_FILE="/botaffiumeiro/data/config.yaml"
+# Ruta del archivo YAML persistente
+CONFIG_FILE="/data/config.yaml"
 
-# Actualizando valores en config.yaml
+# Si no existe el archivo config.yaml, copiar el archivo base
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Archivo config.yaml no encontrado en /data, copiando archivo predeterminado..."
+    cp /botaffiumeiro/config.yaml "$CONFIG_FILE"
+fi
+
+# Actualizando valores en config.yaml desde las opciones del complemento
 echo "Actualizando valores en $CONFIG_FILE..."
 
 # Telegram settings
@@ -31,4 +36,3 @@ cat $CONFIG_FILE
 # Iniciar la aplicación
 echo "Iniciando la aplicación..."
 python3 /botaffiumeiro/botaffiumeiro.py
-
