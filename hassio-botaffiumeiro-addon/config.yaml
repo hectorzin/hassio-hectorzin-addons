@@ -11,6 +11,7 @@ startup: "services"
 boot: "auto"
 host_network: true
 options:
+  path_to_host_data: "/data"
   bot_token: ""
   msg_affiliate_link_modified: "Here is the modified link with our affiliate program:"
   msg_reply_provided_by_user: "Reply provided by"
@@ -27,6 +28,7 @@ options:
   admitad_publisher_id: "2306205"
   admitad_advertisers: "giftmio.com:93fd4vbk6c873a1e3014d68450d763"
 schema:
+  path_to_host_data: str
   bot_token: "str"
   msg_affiliate_link_modified: "str"
   msg_reply_provided_by_user: "str"
