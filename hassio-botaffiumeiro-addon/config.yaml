@@ -1,8 +1,8 @@
 name: "Botaffiumeiro"
-version: "1.0.5"
+version: "1.0.6"
 slug: "botaffiumeiro"
-description: "Modify Telegram links for affiliate links"
-url: "https://github.com/hectorzin/hassio-hectorzin-addons"
+description: "Modify Telegram links with affiliate links"
+url: "https://github.com/hectorzin/hassio-hectorzin-addons/hassio-botaffiumeiro-addon"
 init: false
 arch:
   - aarch64
