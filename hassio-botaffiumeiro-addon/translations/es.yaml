@@ -41,3 +41,7 @@ configuration:
   admitad_adversiters:
     name: "Anunciantes de Admitad"
     description: "Lista de anunciantes de Admitad y sus IDs de campaña (formato: - domain: DOMINIO y id: ID)."
+  log_level:
+  name: "Nivel de Log"
+  description: "Configura el nivel de registro (DEBUG, INFO, WARN, ERROR, CRITICAL)."
+
