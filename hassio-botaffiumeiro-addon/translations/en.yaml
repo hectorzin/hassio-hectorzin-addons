@@ -41,3 +41,6 @@ configuration:
   admitad_adversiters:
     name: "Admitad Advertisers"
     description: "List of Admitad advertisers and their campaign IDs (format: - domain: DOMAIN and id: ID)."
+log_level:
+  name: "Log Level"
+  description: "Set the logging level for the bot (DEBUG, INFO, WARN, ERROR, CRITICAL)."
