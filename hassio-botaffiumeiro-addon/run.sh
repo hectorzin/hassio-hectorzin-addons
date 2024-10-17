@@ -1,9 +1,10 @@
 #!/bin/bash
+set -e
 
-# Pass HA addon options to data/config.yaml
+# Ejecutar el script de Python que convierte JSON en YAML
 python3 /botaffiumeiro/json2yaml.py
 
 cat /botaffiumeiro/data/config.yaml
 
-# Start bot
+# Iniciar el bot
 python3 /botaffiumeiro/botaffiumeiro.py
