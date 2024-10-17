@@ -2,7 +2,7 @@ name: "Botaffiumeiro"
 version: "1.0"
 slug: "botaffiumeiro"
 description: "Modify Telegram links for affiliate links"
-init: auto
+init: False
 arch:
   - aarch64
   - amd64
