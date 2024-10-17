@@ -8,7 +8,6 @@ RUN apk update && apk add --no-cache \
     gcc \
     musl-dev \
     libffi-dev \
-    openssl-dev \
     bash \
     make
 
