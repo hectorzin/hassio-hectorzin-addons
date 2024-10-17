@@ -2,7 +2,7 @@ name: "Botaffiumeiro"
 version: "1.0"
 slug: "botaffiumeiro"
 description: "Modify Telegram links for affiliate links"
-init: False
+init: false
 arch:
   - aarch64
   - amd64
@@ -12,7 +12,7 @@ arch:
 startup: services
 options:
   bot_token: ""
-  delete_messages: True
+  delete_messages: true
   excluded_users:
     - id: "HectorziN"
     - id: "danimart1991"
