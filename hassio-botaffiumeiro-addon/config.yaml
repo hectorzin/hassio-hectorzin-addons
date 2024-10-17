@@ -1,44 +1,64 @@
-name: Bot Affiumeiro
-version: "1.0"
-slug: botaffiumeiro
-description: "Complemento de Home Assistant para el bot Affiumeiro"
+name: "Bota"
+description: "mi bota!"
+version: "1.0.66"
+slug: "botafu"
+init: false
 arch:
-  - amd64
-  - armv7
   - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
 startup: services
-boot: auto
 options:
-  path_to_host_data: "/data"
   bot_token: ""
+  delete_messages: True
+  excluded_users:
+    - id: "HectorziN"
+    - id: "danimart1991"
   msg_affiliate_link_modified: "Here is the modified link with our affiliate program:"
   msg_reply_provided_by_user: "Reply provided by"
-  excluded_users: "HectorziN,danimart1991"
-  log_level: "INFO"
   amazon_affiliate_id: "botaffiumeiro_cofee-21"
   aliexpress_app_key: ""
   aliexpress_app_secret: ""
   aliexpress_tracking_id: ""
-  msg_aliexpress_discount: "💥 AliExpress discount codes:\n\n"
-  aliexpress_discount_codes: "💰2$ off for purchases over 20$:【IFPTKOH】\n💰5$ off for purchases over 50$:【IFPT35D】\n💰25$ off for purchases over 200$:【IFPQDMH】\n💰50$ off for purchases over 400$:【IFP5RIN】"
+  aliexpress_discount_codes: 
+   - line: "💥 Códigos de descuento de AliExpress:"
+   - line: "💰2$ off for purchases over 20$:【IFPTKOH】"
+   - line: "💰5$ off for purchases over 50$:【IFPT35D】"
+   - line: "💰25$ off for purchases over 200$:【IFPQDMH】"
+   - line: "💰50$ off for purchases over 400$:【IFP5RIN】"
   awin_publisher_id: "1639881"
-  awin_advertisers: "pccomponentes.com:20982,leroymerlin.es:20598,aliexpress.com:11640"
+  awin_adversiters:
+    - domain: aliexpress.com
+      id: "11640"
+    - domain: pccomponentes.com
+      id: "20982"
+    - domain: leroymerlin.es
+      id: "20598"
   admitad_publisher_id: "2306205"
-  admitad_advertisers: "giftmio.com:93fd4vbk6c873a1e3014d68450d763"
+  admitad_adversiters:
+    - domain: giftmio.com
+      id: 93fd4vbk6c873a1e3014d68450d763
 schema:
-  path_to_host_data: str
   bot_token: str
-  msg_affiliate_link_modified: str
-  msg_reply_provided_by_user: str
-  excluded_users: str?
-  log_level: str?
+  delete_messages: bool?
+  excluded_users:
+    - id: str?
+  msg_affiliate_link_modified: str?
+  msg_reply_provided_by_user: str?
   amazon_affiliate_id: str?
   aliexpress_app_key: str?
   aliexpress_app_secret: str?
   aliexpress_tracking_id: str?
-  msg_aliexpress_discount: str?
-  aliexpress_discount_codes: str?
+  aliexpress_discount_codes:
+    - line: str?
   awin_publisher_id: str?
-  awin_advertisers: str?
+  awin_adversiters:
+    - domain: str?
+      id: str?
   admitad_publisher_id: str?
-  admitad_advertisers: str?
+  admitad_adversiters:
+    - domain: str?
+      id: str?
+
