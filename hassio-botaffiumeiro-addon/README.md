@@ -21,16 +21,22 @@ Below is a breakdown of all the available configuration fields, including exampl
 
 ### 2. Message settings
 **msg_affiliate_link_modified**: The message that will be sent when a Telegram message has been modified with an affiliate link.
+
 **msg_reply_provided_by_user**: The message that indicates which user provided the original message with the affiliate link.
+
 
 ### 3. Amazon settings
 **amazon_affiliate_id**: Your Amazon Affiliate ID, which will be appended to Amazon links to generate affiliate URLs.
 
 ### 4. Aliexpress settings
 **aliexpress_app_key**: Your AliExpress App Key, used for API requests to generate affiliate links.
+
 **aliexpress_app_secret**: Your AliExpress App Secret, used for signing API requests.
+
 **aliexpress_tracking_id**: Your AliExpress Tracking ID, used for affiliate tracking.
+
 **aliexpress_discount_codes**: List of AliExpress discount codes that will be sent with each message. You can provide multiple discount codes in a list format, with each code being a separate line with the following structure:
+
 ```
   - line: "Here are your discount codes!"
   - line: "💥 2$ off for purchases over 20$: 【CODE1】"
@@ -40,7 +46,9 @@ Below is a breakdown of all the available configuration fields, including exampl
 
 ### 5. Awin Settings
 **awin_publisher_id**: Your Awin Publisher ID, which will be used to manage affiliate links for Awin-supported stores.
+
 **awin_advertisers**: A list of Awin-supported stores and their respective advertiser IDs. These IDs are required to generate affiliate links for specific stores. You must use the following structure:
+
 ```
   - domain: "store1.com"
     id: "advertiser_id_1"
@@ -50,7 +58,9 @@ Below is a breakdown of all the available configuration fields, including exampl
 
 ### 6. Admitad Settings
 **admitad_publisher_id**: Your Admitad Publisher ID, used to manage affiliate links for Admitad-supported stores.
+
 **admitad_advertisers**: A list of Admitad-supported stores and their respective advertiser IDs, required to generate affiliate links for specific stores. You must use the following structure:
+
 ```
   - domain: "store1.com"
     id: "campaign_id_1"
