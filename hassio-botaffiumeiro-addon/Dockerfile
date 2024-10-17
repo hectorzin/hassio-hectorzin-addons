@@ -5,7 +5,6 @@ FROM python:3.12-alpine
 RUN apk update && apk add --no-cache \
     git \
     jq \
-    gcc \
     bash \
     make
 
