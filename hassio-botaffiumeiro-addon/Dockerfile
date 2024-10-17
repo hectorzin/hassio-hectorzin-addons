@@ -1,21 +1,15 @@
-FROM python:3.9-slim
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y git
+# Instalar las dependencias necesarias para el complemento
+RUN \
+  apk add --no-cache \
+    python3 \
+    py3-pip
 
-# Clone the Botaffiumeiro repository
-RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
+# Copiar el script de ejecución al contenedor
+COPY run.sh /run.sh
+RUN chmod a+x /run.sh
 
-# Install project dependencies
-WORKDIR /botaffiumeiro
-RUN pip install -r requirements.txt
-
-# Ensure /data directory is created (for persistent data)
-RUN mkdir -p /data
-
-# Copy the run.sh script
-COPY run.sh /botaffiumeiro/run.sh
-RUN chmod +x /botaffiumeiro/run.sh
-
-# Run the application
-CMD ["/botaffiumeiro/run.sh"]
+# Comando para ejecutar el script run.sh
+CMD [ "/run.sh" ]
