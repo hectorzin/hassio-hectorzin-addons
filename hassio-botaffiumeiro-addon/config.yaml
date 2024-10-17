@@ -1,5 +1,5 @@
 name: "Botaffiumeiro"
-version: "1.0"
+version: "1.0.1"
 slug: "botaffiumeiro"
 description: "Modify Telegram links for affiliate links"
 init: false
