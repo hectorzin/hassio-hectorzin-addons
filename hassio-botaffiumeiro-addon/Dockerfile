@@ -2,7 +2,6 @@
 FROM python:3.12-alpine
 
 # Install necessary dependencies
-RUN apt-get update && apt-get install -y git
 RUN apt-get update && apt-get install -y git jq
 
 # Clone the Botaffiumeiro repository
