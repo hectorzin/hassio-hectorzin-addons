@@ -1,15 +1,15 @@
 import json
 import yaml
 
-# Rutas de archivos
-json_file = "/data/options.json"  # Cambia la ruta al archivo JSON
-yaml_file = "/botaffiumeiro/data/config.yaml"  # Cambia la ruta para el archivo YAML de salida
+# File paths
+json_file = "/data/options.json"  # Change the path to the JSON file
+yaml_file = "/botaffiumeiro/data/config.yaml"  # Change the path to the output YAML file
 
-# Cargar el archivo JSON
+# Load the JSON file
 with open(json_file, 'r') as f:
     data = json.load(f)
 
-# Convertir el JSON en la estructura de YAML deseada
+# Convert JSON into the desired YAML structure
 config = {
     "telegram": {
         "bot_token": data.get("bot_token", ""),
@@ -44,8 +44,8 @@ config = {
     "log_level": "INFO"
 }
 
-# Guardar el archivo YAML
+# Save the YAML file
 with open(yaml_file, 'w') as f:
     yaml.dump(config, f, allow_unicode=True, sort_keys=False)
 
-print(f"Archivo YAML guardado en {yaml_file}")
+print(f"YAML file saved to {yaml_file}")
