@@ -2,8 +2,8 @@ import json
 import yaml
 
 # File paths
-json_file = "/data/options.json"  # Change the path to the JSON file
-yaml_file = "/botaffiumeiro/data/config.yaml"  # Change the path to the output YAML file
+json_file = "/data/options.json"
+yaml_file = "/botaffiumeiro/data/config.yaml"
 
 # Load the JSON file
 with open(json_file, 'r') as f:
