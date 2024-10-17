@@ -1,9 +1,17 @@
-# Use an official Python runtime as a parent image
-FROM python:3.9-slim
+# Usar la imagen base de Python con Alpine
+FROM python:3.12-alpine
 
+# Instalar las dependencias del sistema necesarias
+RUN apk update && apk add --no-cache \
+    git \
+    jq \
+    gcc \
+    musl-dev \
+    libffi-dev \
+    openssl-dev \
+    bash \
+    make
 
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y git jq
 
 # Clone the Botaffiumeiro repository
 RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
