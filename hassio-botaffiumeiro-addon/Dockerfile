@@ -4,9 +4,7 @@ FROM python:3.12-alpine
 # Instalar las dependencias del sistema necesarias
 RUN apk update && apk add --no-cache \
     git \
-    jq \
-    bash
-
+    jq
 
 # Clone the Botaffiumeiro repository
 RUN git clone https://github.com/hectorzin/botaffiumeiro.git /botaffiumeiro
