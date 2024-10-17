@@ -6,8 +6,6 @@ RUN apk update && apk add --no-cache \
     git \
     jq \
     gcc \
-    musl-dev \
-    libffi-dev \
     bash \
     make
 
